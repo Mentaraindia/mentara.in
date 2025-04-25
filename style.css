@@ -7,37 +7,34 @@
   box-sizing: border-box;
 }
 
-/* Body & html styling */
+/* Root */
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;              /* hide horizontal scrollbars */
+  overflow-x: hidden;        /* no horizontal scroll */
   font-family: sans-serif;
 }
 
-/* Enable smooth full-page vertical scroll snapping */
+/* Main container: vertical scroll with snap */
 main {
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch; /* smooth on iOS */
 }
 
-/* Each section fills the viewport */
+/* Each “slide” */
 section {
-  position: relative;
-  scroll-snap-align: start;
-  height: 100vh;                 /* one screen high */
-  display: flex;                 /* center the content */
-  align-items: center;
+  scroll-snap-align: start;  /* snap to top of section */
+  display: flex;
   justify-content: center;
-  background-color: #ffffff;     /* change to your desired background color */
+  align-items: center;
+  background-color: #ffffff; /* match your slide background */
 }
 
-/* Make SVGs cover the entire section */
+/* SVG fills width, scales height automatically */
 section img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;             /* crop edges as needed to eliminate whitespace */
+  height: auto;
 }
