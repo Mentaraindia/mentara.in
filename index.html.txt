@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Page 1: Home -->
+    <section id="home">
+      <img src="assets/1.svg" alt="Home: Where Voices Find Strength">
+    </section>
+
+    <!-- Page 2: About Us -->
+    <section id="about">
+      <img src="assets/2.svg" alt="About Us: Our Story & Mission">
+    </section>
+
+    <!-- Page 3: Our Focus -->
+    <section id="focus">
+      <img src="assets/3.svg" alt="Our Focus: Mental Health, Parenting, Sex Education">
+    </section>
+
+    <!-- Page 4: Upcoming Programmes -->
+    <section id="programmes">
+      <img src="assets/4.svg" alt="Upcoming Programmes">
+    </section>
+
+    <!-- Page 5: Why Choose Us -->
+    <section id="why">
+      <img src="assets/5.svg" alt="Why Choose Us: Our Strengths">
+    </section>
+
+    <!-- Page 6: Contact -->
+    <section id="contact">
+      <img src="assets/6.svg" alt="Contact Mentara">
+    </section>
+  </main>
+</body>
+</html>
