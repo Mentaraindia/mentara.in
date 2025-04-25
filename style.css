@@ -36,18 +36,18 @@ section img {
   display: block;
 }
 
-/* SOCIAL ICONS FOR CONTACT PAGE */
+/* CONTACT SECTION SOCIAL ICONS */
 section.contact-section {
   position: relative;
 }
 
 section.contact-section .social-links {
   position: absolute;
-  bottom: 8%;
-  left: 25%;
+  bottom: 10%;
+  left: 20%;
   display: flex;
   gap: 20px;
-  z-index: 1000; /* Make sure it's above SVG */
+  z-index: 1000;
 }
 
 section.contact-section .social-links img {
@@ -65,9 +65,10 @@ section.contact-section .social-links img:hover {
 @media (max-width: 768px) {
   section.contact-section .social-links {
     bottom: 6%;
-    left: 30%;
+    left: 25%;
     gap: 16px;
   }
+
   section.contact-section .social-links img {
     width: 32px;
     height: 32px;
@@ -77,9 +78,10 @@ section.contact-section .social-links img:hover {
 @media (max-width: 480px) {
   section.contact-section .social-links {
     bottom: 4%;
-    left: 33%;
+    left: 28%;
     gap: 12px;
   }
+
   section.contact-section .social-links img {
     width: 28px;
     height: 28px;
