@@ -1,49 +1,22 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* CONTACT SECTION SOCIAL ICONS */
+section.contact-section {
+  position: relative; /* Establishes a positioning context for child elements */
 }
 
-html, body {
-  height: auto; /* Changed from 100% to auto */
-  width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth; /* Smooth scrolling remains */
-  font-family: sans-serif;
-}
-
-main {
-  height: auto; /* Changed from 100% to auto */
-  overflow-y: auto;
-}
-
-section {
-  position: relative;
-  width: 100%; /* Removed vw to allow normal scrolling */
-  height: auto; /* Removed vh to allow normal scrolling */
-  overflow: hidden;
-}
-
-section img {
-  width: 100%;
-  height: auto; /* Adjusted to maintain aspect ratio */
-  object-fit: cover;
+section.contact-section img {
+  width: 100%; /* Ensure the background image scales properly */
+  height: auto;
   display: block;
 }
 
-/* CONTACT SECTION SOCIAL ICONS */
-section.contact-section {
-  position: relative;
-  padding: 20px 0; /* Added padding for spacing */
-}
-
 section.contact-section .social-links {
+  position: absolute; /* Positions the icons relative to the parent section */
+  bottom: 10%; /* Distance from the bottom of the section */
+  left: 10%; /* Distance from the left of the section */
   display: flex;
-  justify-content: center; /* Centered links horizontally */
-  gap: 20px;
-  margin-top: 20px; /* Space above social links */
+  flex-direction: column; /* Stacks the icons vertically */
+  gap: 10px; /* Space between icons */
+  z-index: 1000; /* Ensures icons appear above the background image */
 }
 
 section.contact-section .social-links img {
@@ -57,10 +30,12 @@ section.contact-section .social-links img:hover {
   transform: scale(1.1);
 }
 
-/* Mobile responsiveness */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   section.contact-section .social-links {
-    gap: 16px;
+    bottom: 8%; /* Slightly higher for smaller screens */
+    left: 12%; /* Slightly further right for smaller screens */
+    gap: 8px;
   }
 
   section.contact-section .social-links img {
@@ -71,7 +46,9 @@ section.contact-section .social-links img:hover {
 
 @media (max-width: 480px) {
   section.contact-section .social-links {
-    gap: 12px;
+    bottom: 6%; /* Even higher for very small screens */
+    left: 15%; /* Further right for very small screens */
+    gap: 6px;
   }
 
   section.contact-section .social-links img {
