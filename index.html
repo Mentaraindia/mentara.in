@@ -1,73 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mentara</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    main section {
-      position: relative;
-      width: 100%;
-    }
-
-    main section img {
-      width: 100%;
-      display: block;
-    }
-
-    .contact-section {
-      position: relative;
-    }
-
-    .social-links {
-      position: absolute;
-      bottom: 80px; /* Adjusts vertical position */
-      left: 40px;   /* Aligns neatly to the left */
-      display: flex;
-      gap: 20px;
-      z-index: 10;
-    }
-
-    .social-links img {
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .social-links img:hover {
-      transform: scale(1.1);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <section><img src="assets/1.svg" alt="Page 1"></section>
-    <section><img src="assets/2.svg" alt="Page 2"></section>
-    <section><img src="assets/3.svg" alt="Page 3"></section>
-    <section><img src="assets/4.svg" alt="Page 4"></section>
-    <section><img src="assets/5.svg" alt="Page 5"></section>
 
-    <section class="contact-section">
-      <img src="assets/6.svg" alt="Page 6">
-      <div class="social-links">
-        <a href="https://www.facebook.com/share/1AaybTmiYN/" target="_blank">
-          <img src="assets/assetsfacebook.svg" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/mentara.in" target="_blank">
-          <img src="assets/assetsinstagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/company/mentaraindia" target="_blank">
-          <img src="assets/assetslinkedin.svg" alt="LinkedIn">
-        </a>
-      </div>
-    </section>
-  </main>
+  <section class="slide" id="slide1">
+    <img src="assets/1.svg" alt="Slide 1">
+  </section>
+
+  <section class="slide" id="slide2">
+    <img src="assets/2.svg" alt="Slide 2">
+  </section>
+
+  <section class="slide" id="slide3">
+    <img src="assets/3.svg" alt="Slide 3">
+  </section>
+
+  <section class="slide" id="slide4">
+    <img src="assets/4.svg" alt="Slide 4">
+  </section>
+
+  <section class="slide" id="slide5">
+    <img src="assets/5.svg" alt="Slide 5">
+  </section>
+
+  <section class="slide contact-slide" id="slide6">
+    <img src="assets/6.svg" alt="Slide 6">
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1AaybTmiYN/" target="_blank">
+        <img src="assets/assetsfacebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/mentara.in" target="_blank">
+        <img src="assets/assetsinstagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/company/mentaraindia" target="_blank">
+        <img src="assets/assetslinkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </section>
+
 </body>
 </html>
