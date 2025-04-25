@@ -5,48 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mentara</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    main section {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    main section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .contact-section {
+      position: relative;
+    }
+
+    .social-links {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-bg {
+      width: 100%;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <main>
-    <!-- Page 1: Home -->
     <section id="home">
       <img src="assets/1.svg" alt="Home: Where Voices Find Strength">
     </section>
 
-    <!-- Page 2: About Us -->
     <section id="about">
       <img src="assets/2.svg" alt="About Us: Our Story & Mission">
     </section>
 
-    <!-- Page 3: Our Focus -->
     <section id="focus">
       <img src="assets/3.svg" alt="Our Focus: Mental Health, Parenting, Sex Education">
     </section>
 
-    <!-- Page 4: Upcoming Programmes -->
     <section id="programmes">
       <img src="assets/4.svg" alt="Upcoming Programmes">
     </section>
 
-    <!-- Page 5: Why Choose Us -->
     <section id="why">
       <img src="assets/5.svg" alt="Why Choose Us: Our Strengths">
     </section>
 
-    <!-- Page 6: Contact & Social Links -->
     <section id="contact" class="contact-section">
-      <!-- Background image for Contact -->
       <img src="assets/6.svg" alt="Contact Mentara" class="contact-bg">
 
-      <!-- Clickable social‐media icons -->
       <div class="social-links">
-        <a href="https://www.facebook.com/share/1AaybTmiYN/" target="_blank" rel="noopener">
+        <a href="https://www.facebook.com/share/1AaybTmiYN/" target="_blank">
           <img src="assets/assetsfacebook.svg" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com/mentara.in" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/mentara.in" target="_blank">
           <img src="assets/assetsinstagram.svg" alt="Instagram">
         </a>
-        <a href="https://www.linkedin.com/company/mentaraindia" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/mentaraindia" target="_blank">
           <img src="assets/assetslinkedin.svg" alt="LinkedIn">
         </a>
       </div>
