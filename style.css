@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Root & smooth scroll */
+/* Root & smooth scrolling */
 html, body {
   height: 100%;
   width: 100%;
@@ -16,67 +16,77 @@ html, body {
   font-family: sans-serif;
 }
 
-/* Each full-screen “slide” */
-.slide {
+/* Full-screen slides */
+main {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
   position: relative;
   width: 100vw;
   height: 100vh;
+  scroll-snap-align: start;
   overflow: hidden;
 }
-.slide img {
+
+section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Contact slide positioning */
-.contact-slide {
+/* Contact slide: allow absolutely positioned icons */
+section.contact-section {
   position: relative;
 }
 
-/* Social icons container */
-.social-links {
+/* Move icons near the bottom-left of the contact slide */
+section.contact-section .social-links {
   position: absolute;
-  bottom: 12%;       /* near the lower part of the slide */
-  left: 20%;         /* shift further left from center */
-  transform: translateX(-50%);
+  bottom: 10%;    /* 10% up from bottom */
+  left: 20%;      /* 20% in from the left edge */
   display: flex;
   gap: 20px;
   z-index: 10;
 }
 
-.social-links img {
+/* Icon sizing & hover effect */
+section.contact-section .social-links img {
   width: 40px;
   height: 40px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-.social-links img:hover {
+
+section.contact-section .social-links img:hover {
   transform: scale(1.1);
 }
 
-/* Mobile tweaks */
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .social-links {
-    bottom: 10%;
+  section.contact-section .social-links {
+    bottom: 8%;
     left: 25%;
     gap: 16px;
   }
-  .social-links img {
-    width: 36px;
-    height: 36px;
+  section.contact-section .social-links img {
+    width: 32px;
+    height: 32px;
   }
 }
 
 @media (max-width: 480px) {
-  .social-links {
-    bottom: 8%;
+  section.contact-section .social-links {
+    bottom: 6%;
     left: 30%;
     gap: 12px;
   }
-  .social-links img {
-    width: 32px;
-    height: 32px;
+  section.contact-section .social-links img {
+    width: 28px;
+    height: 28px;
   }
 }
