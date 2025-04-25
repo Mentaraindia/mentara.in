@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mentara</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
   <style>
     body {
       margin: 0;
@@ -14,12 +14,10 @@
     main section {
       position: relative;
       width: 100%;
-      overflow: hidden;
     }
 
     main section img {
       width: 100%;
-      height: auto;
       display: block;
     }
 
@@ -29,56 +27,36 @@
 
     .social-links {
       position: absolute;
-      bottom: 20px;
+      bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       gap: 20px;
-      z-index: 2;
+      z-index: 10;
     }
 
     .social-links img {
       width: 40px;
       height: 40px;
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: 0.3s;
     }
 
     .social-links img:hover {
       transform: scale(1.1);
     }
-
-    .contact-bg {
-      width: 100%;
-      display: block;
-    }
   </style>
 </head>
 <body>
   <main>
-    <section id="home">
-      <img src="assets/1.svg" alt="Home: Where Voices Find Strength">
-    </section>
+    <section><img src="assets/1.svg" alt="Page 1"></section>
+    <section><img src="assets/2.svg" alt="Page 2"></section>
+    <section><img src="assets/3.svg" alt="Page 3"></section>
+    <section><img src="assets/4.svg" alt="Page 4"></section>
+    <section><img src="assets/5.svg" alt="Page 5"></section>
 
-    <section id="about">
-      <img src="assets/2.svg" alt="About Us: Our Story & Mission">
-    </section>
-
-    <section id="focus">
-      <img src="assets/3.svg" alt="Our Focus: Mental Health, Parenting, Sex Education">
-    </section>
-
-    <section id="programmes">
-      <img src="assets/4.svg" alt="Upcoming Programmes">
-    </section>
-
-    <section id="why">
-      <img src="assets/5.svg" alt="Why Choose Us: Our Strengths">
-    </section>
-
-    <section id="contact" class="contact-section">
-      <img src="assets/6.svg" alt="Contact Mentara" class="contact-bg">
-
+    <section class="contact-section">
+      <img src="assets/6.svg" alt="Page 6">
       <div class="social-links">
         <a href="https://www.facebook.com/share/1AaybTmiYN/" target="_blank">
           <img src="assets/assetsfacebook.svg" alt="Facebook">
