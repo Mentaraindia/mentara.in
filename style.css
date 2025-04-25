@@ -1,89 +1,63 @@
-*,
-*::before,
-*::after {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   font-family: sans-serif;
 }
 
-main {
-  height: 100%;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-section {
-  position: relative;
+.page {
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
   overflow: hidden;
+  scroll-snap-align: start;
+  position: relative;
 }
 
-section img {
+.page svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* CONTACT SECTION SOCIAL ICONS */
-section.contact-section {
-  position: relative;
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-section.contact-section .social-links {
+.social-icons {
   position: absolute;
-  bottom: 10%;
-  left: 20%;
+  bottom: 5%;
+  left: 8%;
   display: flex;
   gap: 20px;
-  z-index: 1000;
+  z-index: 10;
 }
 
-section.contact-section .social-links img {
-  width: 40px;
-  height: 40px;
+.social-icons img {
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-section.contact-section .social-links img:hover {
+.social-icons img:hover {
   transform: scale(1.1);
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
-  section.contact-section .social-links {
+  .social-icons {
     bottom: 6%;
-    left: 25%;
-    gap: 16px;
+    left: 10%;
+    gap: 15px;
   }
 
-  section.contact-section .social-links img {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  section.contact-section .social-links {
-    bottom: 4%;
-    left: 28%;
-    gap: 12px;
+  .social-icons img {
+    width: 26px;
+    height: 26px;
   }
 
-  section.contact-section .social-links img {
-    width: 28px;
-    height: 28px;
+  .page svg {
+    object-fit: contain;
   }
 }
