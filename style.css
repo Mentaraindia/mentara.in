@@ -1,36 +1,67 @@
-/* Reset & box-sizing */
-*,
-*::before,
-*::after {
+/* Reset styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body & main styling */
-body,
-html {
+html, body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
   overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #ffffff;
 }
 
-main {
+/* Make all sections responsive */
+main section {
+  position: relative;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* Each section holds one SVG */
-section {
-  width: 100%;
-  /* Optional: make each section full viewport height
-     height: 100vh;
-  */
-}
-
-/* Images scale responsively */
-section img {
-  display: block;
+main section img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Make social media icons visible and positioned */
+.contact-section {
+  position: relative;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 80px;   /* Distance from bottom of page */
+  left: 40px;     /* Neatly from left border */
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .social-links {
+    bottom: 60px;
+    left: 30px;
+    gap: 15px;
+  }
+
+  .social-links img {
+    width: 32px;
+    height: 32px;
+  }
 }
